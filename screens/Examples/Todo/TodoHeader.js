@@ -5,7 +5,7 @@ export default class TodoHeader extends Component {
   render() {
     const { children } = this.props;
     return (
-      <View>
+      <View style={styles.header}>
         <Text style={styles.title}>{children}</Text>
       </View>
     )

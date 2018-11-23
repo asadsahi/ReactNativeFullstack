@@ -6,6 +6,10 @@ import TodoList from './TodoList';
 import TodoFooter from './TodoFooter';
 
 export default class TodoScreen extends Component {
+  static navigationOptions = {
+    title: 'Todos',
+  };
+
   state = {
     items: [
       { label: 'Eat', completed: false },

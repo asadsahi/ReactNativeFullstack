@@ -1,21 +1,24 @@
 import React from 'react';
-import {
-  Image,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { Image, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View, AsyncStorage } from 'react-native';
+import { Button, Text as NativeText } from 'native-base';
+
 import { WebBrowser } from 'expo';
 
 import { MonoText } from '../components/StyledText';
 
 export default class HomeScreen extends React.Component {
-  static navigationOptions = {
-    header: null,
-  };
+  // static navigationOptions = {
+  //   title: 'Home',
+  //   drawerLabel: 'Home',
+  //   drawerIcon: ({ tintColor }) => (
+  //     <Button
+  //       transparent
+  //       onPress={() => this.props.navigation.navigate("DrawerOpen")}
+  //     >
+  //       <Icon name="menu" />
+  //     </Button>
+  //   ),
+  // };
 
   render() {
     return (
@@ -31,6 +34,7 @@ export default class HomeScreen extends React.Component {
               style={styles.welcomeImage}
             />
           </View>
+
 
           <View style={styles.getStartedContainer}>
             {this._maybeRenderDevelopmentModeWarning()}
@@ -50,6 +54,11 @@ export default class HomeScreen extends React.Component {
             <TouchableOpacity onPress={this._handleHelpPress} style={styles.helpLink}>
               <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
             </TouchableOpacity>
+          </View>
+          <View style={styles.signOutButton}>
+            <Button primary onPress={this._signOutAsync}>
+              <NativeText>Sign out</NativeText>
+            </Button>
           </View>
         </ScrollView>
 
@@ -96,6 +105,11 @@ export default class HomeScreen extends React.Component {
       'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
     );
   };
+
+  _signOutAsync = async () => {
+    await AsyncStorage.clear();
+    this.props.navigation.navigate('Auth');
+  };
 }
 
 const styles = StyleSheet.create({
@@ -108,6 +122,9 @@ const styles = StyleSheet.create({
     color: 'rgba(0,0,0,0.4)',
     fontSize: 14,
     lineHeight: 19,
+    textAlign: 'center',
+  },
+  signOutButton: {
     textAlign: 'center',
   },
   contentContainer: {
