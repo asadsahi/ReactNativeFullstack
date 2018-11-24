@@ -17,7 +17,7 @@ export default class ExamplesScreen extends Component {
                     Routes.map((item, index) => (
                         <ListItem
                             key={index}
-                            onPress={() => navigation.push(item.route)}
+                            onPress={() => navigation.navigate(item.route)}
                             leftIcon={{ name: item.icon, type: item.iconType || 'material-community' }}
                             title={item.description}
                         />
