@@ -36,11 +36,6 @@ export default class App extends React.Component {
       Font.loadAsync({
         // This is the font that we are using for our tab bar
         ...Icon.Ionicons.font,
-        // We include SpaceMono because we use it in HomeScreen.js. Feel free
-        // to remove this if you are not using it in your app
-        'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
-        'Roboto': require('native-base/Fonts/Roboto.ttf'),
-        'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
       }),
     ]);
   };
@@ -58,6 +53,7 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
+    // paddingTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight,
     flex: 1,
     backgroundColor: '#fff',
   },

@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, AsyncStorage } from 'react-native';
-import { Button, Text } from 'native-base';
+import { Button, Icon } from 'react-native-elements';
 
 export default class SignInScreen extends Component {
-    
+
     static navigationOptions = {
-        title: 'Please sign in',
+        title: 'Sign In',
     };
 
     render() {
         return (
-            <View style={styles.container}>
-                <Button primary onPress={this._signInAsync}>
-                    <Text>Sing in</Text>
-                </Button>
+            <View style={styles.signinContainer}>
+                <Button title="SIGN IN"
+                    buttonStyle={styles.signinButton}
+                    onPress={this._signInAsync}
+                    icon={
+                        <Icon name='login' type='material-community' color='white' />
+                    } />
             </View>
         );
     }
@@ -25,8 +28,13 @@ export default class SignInScreen extends Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
+    signinContainer: {
+        alignItems: 'center',
+    },
+    signinButton: {
+        marginVertical: 10,
+        borderRadius: 30,
+        height: 50,
+        width: 250,
     },
 });

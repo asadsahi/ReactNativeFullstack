@@ -1,26 +1,17 @@
 import React from 'react';
-import { Image, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View, AsyncStorage } from 'react-native';
-import { Button, Text as NativeText } from 'native-base';
+import { Image, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View, AsyncStorage, Button } from 'react-native';
 
 import { WebBrowser } from 'expo';
 
-import { MonoText } from '../components/StyledText';
+import { StyledText } from '../components/StyledText';
 
 export default class HomeScreen extends React.Component {
-  // static navigationOptions = {
-  //   title: 'Home',
-  //   drawerLabel: 'Home',
-  //   drawerIcon: ({ tintColor }) => (
-  //     <Button
-  //       transparent
-  //       onPress={() => this.props.navigation.navigate("DrawerOpen")}
-  //     >
-  //       <Icon name="menu" />
-  //     </Button>
-  //   ),
-  // };
+  static navigationOptions = {
+    title: 'Home',
+  };
 
   render() {
+    const { navigation } = this.props;
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -42,7 +33,7 @@ export default class HomeScreen extends React.Component {
             <Text style={styles.getStartedText}>Get started by opening</Text>
 
             <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-              <MonoText style={styles.codeHighlightText}>screens/HomeScreen.js</MonoText>
+              <StyledText style={styles.codeHighlightText}>screens/HomeScreen.js</StyledText>
             </View>
 
             <Text style={styles.getStartedText}>
@@ -55,10 +46,9 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
             </TouchableOpacity>
           </View>
-          <View style={styles.signOutButton}>
-            <Button primary onPress={this._signOutAsync}>
-              <NativeText>Sign out</NativeText>
-            </Button>
+
+          <View style={styles.helpContainer}>
+            <Button title="Explore examples" onPress={() => navigation.navigate("Examples")}></Button>
           </View>
         </ScrollView>
 
@@ -66,7 +56,7 @@ export default class HomeScreen extends React.Component {
           <Text style={styles.tabBarInfoText}>This is a tab bar. You can edit it in:</Text>
 
           <View style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-            <MonoText style={styles.codeHighlightText}>navigation/MainTabNavigator.js</MonoText>
+            <StyledText style={styles.codeHighlightText}>navigation/MainTabNavigator.js</StyledText>
           </View>
         </View>
       </View>
@@ -105,11 +95,6 @@ export default class HomeScreen extends React.Component {
       'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
     );
   };
-
-  _signOutAsync = async () => {
-    await AsyncStorage.clear();
-    this.props.navigation.navigate('Auth');
-  };
 }
 
 const styles = StyleSheet.create({
@@ -122,9 +107,6 @@ const styles = StyleSheet.create({
     color: 'rgba(0,0,0,0.4)',
     fontSize: 14,
     lineHeight: 19,
-    textAlign: 'center',
-  },
-  signOutButton: {
     textAlign: 'center',
   },
   contentContainer: {

@@ -1,52 +1,30 @@
 import React, { Component } from "react";
-import { Button, Text, Container, Card, CardItem, Body, Content, Header, Title, Left, Icon, Right } from "native-base";
+import { ScrollView } from 'react-native';
+import { ListItem } from 'react-native-elements';
+
+import { Routes } from './ExamplesStack';
 
 export default class ExamplesScreen extends Component {
+    static navigationOptions = {
+        title: 'Examples'
+    };
+
     render() {
+        const { navigation } = this.props;
         return (
-            <Container>
-                <Header>
-                    <Left>
-                        <Button
-                            transparent
-                            onPress={() => this.props.navigation.navigate("DrawerOpen")}
-                        >
-                            <Icon name="menu" />
-                        </Button>
-                    </Left>
-                    <Body>
-                        <Title>HomeScreen</Title>
-                    </Body>
-                    <Right />
-                </Header>
-                <Content padder>
-                    <Card>
-                        <CardItem>
-                            <Body>
-                                <Text>Chat App to talk some awesome people!</Text>
-                            </Body>
-                        </CardItem>
-                    </Card>
-                    <Button
-                        full
-                        rounded
-                        dark
-                        style={{ marginTop: 10 }}
-                        onPress={() => this.props.navigation.navigate("Chat")}
-                    >
-                        <Text>Chat With People</Text>
-                    </Button>
-                    <Button
-                        full
-                        rounded
-                        primary
-                        style={{ marginTop: 10 }}
-                        onPress={() => this.props.navigation.navigate("ProfileScreen")}
-                    >
-                        <Text>Goto Profiles</Text>
-                    </Button>
-                </Content>
-            </Container>
+            <ScrollView>
+                {
+                    Routes.map((item, index) => (
+                        <ListItem
+                            key={index}
+                            onPress={() => navigation.push(item.route)}
+                            leftIcon={{ name: item.icon, type: item.iconType || 'material-community' }}
+                            title={item.description}
+                        />
+                    ))
+                }
+            </ScrollView>
         );
     }
 }
+

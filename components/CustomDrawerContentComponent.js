@@ -1,55 +1,40 @@
 import React, { Component } from 'react';
-import { StyleSheet, Image } from 'react-native';
-import { Button, Text, Container, List, ListItem, Content, Icon } from "native-base";
+import { StyleSheet, ScrollView, AsyncStorage } from 'react-native';
+import { ListItem } from 'react-native-elements';
+import { DrawerItems, SafeAreaView } from 'react-navigation';
 
-const routes = ["Home", "Settings", "Links", "Examples"];
-export default class CustomDrawerContentComponent extends Component {
+const routes = ["Home", "Links", "Settings"];
+
+class CustomDrawerContentComponent extends Component {
     render() {
+        const { navigation } = this.props;
         return (
-            <Container>
-                <Content>
-                    <Image
-                        source={{
-                            uri:
-                                "https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/assets/drawer-cover.png"
-                        }}
-                        style={{
-                            height: 120,
-                            width: "100%",
-                            alignSelf: "stretch",
-                            position: "absolute"
-                        }}
-                    />
-                    <Image
-                        square
-                        style={{
-                            height: 80,
-                            width: 70,
-                            position: "absolute",
-                            alignSelf: "center",
-                            top: 20
-                        }}
-                        source={{
-                            uri:
-                                "https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/assets/logo.png"
-                        }}
-                    />
-                    <List
-                        dataArray={routes}
-                        contentContainerStyle={{ marginTop: 120 }}
-                        renderRow={data => {
-                            return (
-                                <ListItem
-                                    button
-                                    onPress={() => this.props.navigation.navigate(data)}
-                                >
-                                    <Text>{data}</Text>
-                                </ListItem>
-                            );
-                        }}
-                    />
-                </Content>
-            </Container>
+            <ScrollView>
+                <SafeAreaView style={styles.container} forceInset={{ top: 'always', horizontal: 'never' }}>
+                    <>
+                        {
+                            routes.map((route, index) => (
+                                <ListItem key={index} title={route} onPress={() => navigation.navigate(route)} />
+                            ))
+                        }
+                        <ListItem key="logout" title="Logout" onPress={() => this.signOutAsync()} />
+                    </>
+                </SafeAreaView>
+            </ScrollView>
         );
     }
+
+    signOutAsync = async () => {
+        const { navigation } = this.props;
+        await AsyncStorage.clear();
+        navigation.navigate('Auth');
+    };
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+});
+
+export default CustomDrawerContentComponent;

@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "ReactNativeFullstack",
-    "description": "A very interesting project.",
-    "slug": "ReactNativeFullstack",
+    "name": "RN-FS",
+    "description": "React native fullstack project.",
+    "slug": "rnfs",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": [
@@ -10,7 +10,8 @@
       "android"
     ],
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
+    "primaryColor": "#05a5d1",
     "icon": "./assets/images/icon.png",
     "splash": {
       "image": "./assets/images/splash.png",
