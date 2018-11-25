@@ -19,10 +19,6 @@ import TodoScreen from './Todo/TodoScreen';
 //   | 'entypo'
 //   | string;
 
-export const Routes = [
-    { route: 'Todo', description: 'Todo list example', icon: 'tasklist', iconType: 'octicon' },
-];
-
 const ExamplesStack = createStackNavigator({
     Examples: ExamplesScreen,
     Todo: TodoScreen,

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { ScrollView } from 'react-native';
 import { ListItem } from 'react-native-elements';
 
-import { Routes } from './ExamplesStack';
+import Routes from './ExamplesRoutes';
 
 export default class ExamplesScreen extends Component {
     static navigationOptions = {

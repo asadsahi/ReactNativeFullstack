@@ -25,7 +25,9 @@ export default class HomeScreen extends React.Component {
               style={styles.welcomeImage}
             />
           </View>
-
+          <View style={styles.helpContainer}>
+            <Button title="Explore examples" onPress={() => navigation.navigate("Examples")}></Button>
+          </View>
 
           <View style={styles.getStartedContainer}>
             {this._maybeRenderDevelopmentModeWarning()}
@@ -47,9 +49,6 @@ export default class HomeScreen extends React.Component {
             </TouchableOpacity>
           </View>
 
-          <View style={styles.helpContainer}>
-            <Button title="Explore examples" onPress={() => navigation.navigate("Examples")}></Button>
-          </View>
         </ScrollView>
 
         <View style={styles.tabBarInfoContainer}>
