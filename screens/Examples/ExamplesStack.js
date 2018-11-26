@@ -4,24 +4,16 @@ import { createStackNavigator } from 'react-navigation';
 import DefaultNavigationOptions from '../../navigation/DefaultNavigationOptions';
 import ExamplesScreen from './ExamplesScreen';
 import TodoScreen from './Todo/TodoScreen';
-
-// Supported font types
-// export type IconType =
-//   | 'material'
-//   | 'material-community'
-//   | 'simple-line-icon'
-//   | 'zocial'
-//   | 'font-awesome'
-//   | 'octicon'
-//   | 'ionicon'
-//   | 'foundation'
-//   | 'evilicon'
-//   | 'entypo'
-//   | string;
+import FlatlistScreen from './Flatlist/FlatlistScreen';
+import CameraScreen from './Camera/CameraScreen';
+import BarcodeScannerScreen from './BarcodeScanner/BarcodeScannerScreen';
 
 const ExamplesStack = createStackNavigator({
     Examples: ExamplesScreen,
     Todo: TodoScreen,
+    Flatlist: FlatlistScreen,
+    Camera: CameraScreen,
+    BarcodeScanner: BarcodeScannerScreen,
 }, {
         initialRouteName: "Examples",
         defaultNavigationOptions: DefaultNavigationOptions,
