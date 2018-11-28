@@ -7,19 +7,19 @@ import TodoScreen from './Todo/TodoScreen';
 import FlatlistScreen from './Flatlist/FlatlistScreen';
 import CameraScreen from './Camera/CameraScreen';
 import BarcodeScannerScreen from './BarcodeScanner/BarcodeScannerScreen';
-import AccelerometerScreen from './Accelerometer/AccelerometerScreen';
 import AudioVideoScreen from './AudioVideo/AudioVideoScreen';
 import BrightnessScreen from './Brightness/BrightnessScreen';
+import ExpoTabNavigator from '../../navigation/ExpoTabNavigator';
 
 const ExamplesStack = createStackNavigator({
+    Expo: ExpoTabNavigator,
     Examples: ExamplesScreen,
     Todo: TodoScreen,
     Flatlist: FlatlistScreen,
     Camera: CameraScreen,
     BarcodeScanner: BarcodeScannerScreen,
-    AccelerometerScanner: AccelerometerScreen,
     AudioVideo: AudioVideoScreen,
-    Brightness: BrightnessScreen
+    Brightness: BrightnessScreen,
 }, {
         initialRouteName: "Examples",
         defaultNavigationOptions: DefaultNavigationOptions,
