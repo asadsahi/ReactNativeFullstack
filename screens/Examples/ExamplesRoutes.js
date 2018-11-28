@@ -17,6 +17,9 @@ const Routes = [
     { route: 'Flatlist', description: 'Flatlist example', icon: 'list-unordered', iconType: 'octicon' },
     { route: 'Camera', description: 'Camera (expo)', icon: 'camera' },
     { route: 'BarcodeScanner', description: 'Barcode scanner (expo)', icon: 'barcode-scan' },
+    { route: 'AccelerometerScanner', description: 'Accelerometer scanner (expo)', icon: 'speedometer' },
+    { route: 'AudioVideo', description: 'Audio Video (expo)', icon: 'audio-video' },
+    { route: 'Brightness', description: 'Brightness (expo)', icon: 'brightness-6' },
 ];
 
 export default Routes;

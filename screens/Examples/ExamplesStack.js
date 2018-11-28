@@ -7,6 +7,9 @@ import TodoScreen from './Todo/TodoScreen';
 import FlatlistScreen from './Flatlist/FlatlistScreen';
 import CameraScreen from './Camera/CameraScreen';
 import BarcodeScannerScreen from './BarcodeScanner/BarcodeScannerScreen';
+import AccelerometerScreen from './Accelerometer/AccelerometerScreen';
+import AudioVideoScreen from './AudioVideo/AudioVideoScreen';
+import BrightnessScreen from './Brightness/BrightnessScreen';
 
 const ExamplesStack = createStackNavigator({
     Examples: ExamplesScreen,
@@ -14,6 +17,9 @@ const ExamplesStack = createStackNavigator({
     Flatlist: FlatlistScreen,
     Camera: CameraScreen,
     BarcodeScanner: BarcodeScannerScreen,
+    AccelerometerScanner: AccelerometerScreen,
+    AudioVideo: AudioVideoScreen,
+    Brightness: BrightnessScreen
 }, {
         initialRouteName: "Examples",
         defaultNavigationOptions: DefaultNavigationOptions,
