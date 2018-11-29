@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Modal, Text, View, StyleSheet } from 'react-native';
 import Touchable from 'react-native-platform-touchable';
 
 import { Colors, Layout } from '../../constants';
 
-export default class ModalExample extends React.Component {
+export default class ModalExample extends Component {
   state = {
     modalVisible: false,
     animationType: 'none',

@@ -1,5 +1,5 @@
 import { FacebookAds } from 'expo';
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, ScrollView, Switch } from 'react-native';
 
 import Colors from '../../constants/Colors';
@@ -19,7 +19,7 @@ AdSettings.addTestDevice(AdSettings.currentDeviceHash);
 
 const adsManager = new NativeAdsManager('629712900716487_629713604049750');
 
-class ChangingFullAd extends React.Component {
+class ChangingFullAd extends Component {
   state = {
     expanded: true,
   };
@@ -80,7 +80,7 @@ class ChangingFullAd extends React.Component {
 
 const FullNativeAd = withNativeAd(ChangingFullAd);
 
-export default class App extends React.Component {
+export default class App extends Component {
   static navigationOptions = {
     title: 'FacebookAds',
   };

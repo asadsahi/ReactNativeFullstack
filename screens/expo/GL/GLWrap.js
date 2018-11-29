@@ -1,11 +1,11 @@
 import { GLView } from 'expo';
-import React from 'react';
+import React, { Component } from 'react';
 import { View } from 'react-native';
 
 import { Colors } from '../../../constants';
 
 export default (title, onContextCreate) =>
-  class extends React.Component {
+  class extends Component {
     static title = title;
 
     componentWillUnmount() {

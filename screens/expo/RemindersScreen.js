@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, Button, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Calendar } from 'expo';
 
-class ReminderRow extends React.Component {
+class ReminderRow extends Component {
   render() {
     const { reminder } = this.props;
     return (
@@ -17,7 +17,7 @@ class ReminderRow extends React.Component {
   }
 }
 
-export default class RemindersScreen extends React.Component {
+export default class RemindersScreen extends Component {
   static navigationOptions = {
     title: 'Reminders',
   };

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Animated, Image, StyleSheet, View } from 'react-native';
 import { BlurView } from 'expo';
 
 const AnimatedBlurView = Animated.createAnimatedComponent(BlurView);
-export default class BlurViewScreen extends React.Component {
+export default class BlurViewScreen extends Component {
   static navigationOptions = {
     title: 'BlurView',
   };

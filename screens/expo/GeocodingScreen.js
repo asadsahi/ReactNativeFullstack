@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   ActivityIndicator,
   Text,
@@ -22,7 +22,7 @@ const EXAMPLES = [
   ':-(',
 ];
 
-export default class GeocodingScreen extends React.Component {
+export default class GeocodingScreen extends Component {
   static navigationOptions = {
     title: 'Geocoding',
   };

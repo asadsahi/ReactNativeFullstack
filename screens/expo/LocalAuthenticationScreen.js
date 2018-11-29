@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { LocalAuthentication } from 'expo';
 import Button from '../../components/Button';
 
-export default class LocalAuthenticationScreen extends React.Component {
+export default class LocalAuthenticationScreen extends Component {
   static navigationOptions = {
     title: 'LocalAuthentication',
   };

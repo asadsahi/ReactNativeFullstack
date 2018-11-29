@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Video } from 'expo';
 
-export default class VideoScreen extends React.Component {
+export default class VideoScreen extends Component {
   static navigationOptions = {
     title: 'Video of a dog',
   };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, ScrollView } from 'react-native';
 import { Permissions, Notifications } from 'expo';
 import HeadingText from '../../components/HeadingText';
@@ -6,7 +6,7 @@ import ListButton from '../../components/ListButton';
 
 import registerForPushNotificationsAsync from '../../api/registerForPushNotificationsAsync';
 
-export default class NotificationScreen extends React.Component {
+export default class NotificationScreen extends Component {
   static navigationOptions = {
     title: 'Notifications',
   };

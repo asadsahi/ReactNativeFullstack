@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import ComponentListScreen from './ComponentListScreen';
 import { Layout } from '../../constants';
 
-export default class ExpoComponentsScreen extends React.Component {
+export default class ExpoComponentsScreen extends Component {
   static navigationOptions = {
     title: Layout.isSmallDevice ? 'Expo SDK Components' : 'Components in Expo SDK',
   };

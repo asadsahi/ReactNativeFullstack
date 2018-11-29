@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, ScrollView, View } from 'react-native';
 import { MailComposer } from 'expo';
 import Button from '../../components/Button';
 
-export default class MailComposerScreen extends React.Component {
+export default class MailComposerScreen extends Component {
   static navigationOptions = {
     title: 'MailComposer',
   };

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, ScrollView, View, Platform, Image } from 'react-native';
 import { ImagePicker, Permissions, Video } from 'expo';
 import { NavigationEvents } from 'react-navigation';
 import ListButton from '../../components/ListButton';
 import MonoText from '../../components/MonoText';
 
-export default class ImagePickerScreen extends React.Component {
+export default class ImagePickerScreen extends Component {
   static navigationOptions = {
     title: 'ImagePicker',
   };

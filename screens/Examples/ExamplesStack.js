@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { createStackNavigator } from 'react-navigation';
 
 import DefaultNavigationOptions from '../../navigation/DefaultNavigationOptions';
@@ -9,10 +9,12 @@ import CameraScreen from './Camera/CameraScreen';
 import BarcodeScannerScreen from './BarcodeScanner/BarcodeScannerScreen';
 import AudioVideoScreen from './AudioVideo/AudioVideoScreen';
 import BrightnessScreen from './Brightness/BrightnessScreen';
-import ExpoTabNavigator from '../../navigation/ExpoTabNavigator';
+import ExpoTabNavigator from '../expo/ExpoTabNavigator';
+import NavigationStackNavigator from '../navigation/NavigationStackNavigator';
 
 const ExamplesStack = createStackNavigator({
     Expo: ExpoTabNavigator,
+    Navigation: NavigationStackNavigator,
     Examples: ExamplesScreen,
     Todo: TodoScreen,
     Flatlist: FlatlistScreen,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Asset, FileSystem, GLView } from 'expo';
 import { Image, Slider, StyleSheet, Text, View } from 'react-native';
 

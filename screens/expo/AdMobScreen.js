@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, View, NativeModules, Platform } from 'react-native';
 import { AdMobBanner, AdMobRewarded, AdMobInterstitial } from 'expo';
 import Button from '../../components/Button';
 
-export default class AdMobScreen extends React.Component {
+export default class AdMobScreen extends Component {
   static navigationOptions = {
     title: 'AdMob',
   };

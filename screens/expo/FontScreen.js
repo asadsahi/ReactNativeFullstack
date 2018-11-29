@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Platform, ScrollView, Text, View } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 
-export default class FontScreen extends React.Component {
+export default class FontScreen extends Component {
   static navigationOptions = {
     title: 'Font',
   };

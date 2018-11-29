@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, Button, Platform, ScrollView, StyleSheet, View } from 'react-native';
 import { Speech } from 'expo';
 import Touchable from 'react-native-platform-touchable';
@@ -12,7 +12,7 @@ const EXAMPLES = [
   { language: 'en', text: 'Adam Perry ate a pear in pairs in Paris' },
 ];
 
-class AmountControlButton extends React.Component {
+class AmountControlButton extends Component {
   render() {
     return (
       <Touchable
@@ -32,7 +32,7 @@ class AmountControlButton extends React.Component {
   }
 }
 
-export default class TextToSpeechScreen extends React.Component {
+export default class TextToSpeechScreen extends Component {
   static navigationOptions = {
     title: 'Speech',
   };

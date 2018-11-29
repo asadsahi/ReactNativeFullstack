@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, Picker, ScrollView, Platform } from 'react-native';
 import { DangerZone } from 'expo';
 import chunk from 'lodash/chunk';
@@ -22,7 +22,7 @@ const localization = {
   }),
 };
 
-export default class LocalizationScreen extends React.Component {
+export default class LocalizationScreen extends Component {
   static navigationOptions = {
     title: 'Localization',
   };

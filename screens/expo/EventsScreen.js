@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Calendar } from 'expo';
 import Button from '../../components/Button';
@@ -6,7 +6,7 @@ import HeadingText from '../../components/HeadingText';
 import ListButton from '../../components/ListButton';
 import MonoText from '../../components/MonoText';
 
-class EventRow extends React.Component {
+class EventRow extends Component {
   render() {
     const { event } = this.props;
     return (
@@ -31,7 +31,7 @@ class EventRow extends React.Component {
   }
 }
 
-export default class EventsScreen extends React.Component {
+export default class EventsScreen extends Component {
   static navigationOptions = {
     title: 'Events',
   };

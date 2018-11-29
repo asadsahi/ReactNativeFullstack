@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { MapView } from 'expo';
 import Layout from '../../constants/Layout';
@@ -15,7 +15,7 @@ const getRandomFloat = (min, max) => {
   return Math.random() * (max - min) + min;
 };
 
-export default class MapsScreen extends React.Component {
+export default class MapsScreen extends Component {
   static navigationOptions = {
     title: '<MapView />',
   };

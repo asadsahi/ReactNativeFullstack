@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Image } from 'react-native';
 import Icons from '../constants/Icons';
 
-export default class ExpoAPIIcon extends React.Component {
+export default class ExpoAPIIcon extends Component {
   render() {
     const { name } = this.props;
     let iconKey = 'Default';

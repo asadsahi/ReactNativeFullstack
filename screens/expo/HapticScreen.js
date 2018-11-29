@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { SectionList, StyleSheet, Text, View } from 'react-native';
 import { Haptic } from 'expo';
 import Button from '../../components/Button';
@@ -21,7 +21,7 @@ const sections = [
   },
 ];
 
-class HapticScreen extends React.Component {
+class HapticScreen extends Component {
   static navigationOptions = {
     title: 'Haptic Feedback',
   };
@@ -48,7 +48,7 @@ class HapticScreen extends React.Component {
   }
 }
 
-class Item extends React.Component {
+class Item extends Component {
   get code() {
     const { method, type } = this.props;
 
@@ -70,7 +70,7 @@ class Item extends React.Component {
   }
 }
 
-class Header extends React.Component {
+class Header extends Component {
   render() {
     const { title } = this.props;
     return (
@@ -81,7 +81,7 @@ class Header extends React.Component {
   }
 }
 
-class HapticButton extends React.Component {
+class HapticButton extends Component {
   onPress = () => {
     const { method, type } = this.props;
     Haptic[method](type);

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { MediaLibrary } from 'expo';
 import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 import MonoText from '../../../components/MonoText';
 
-export default class MediaAlbumsScreen extends React.Component {
+export default class MediaAlbumsScreen extends Component {
   static navigationOptions = {
     title: 'MediaLibrary Albums',
   };

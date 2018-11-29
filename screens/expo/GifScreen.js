@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Image, View } from 'react-native';
 
-export default class GifScreen extends React.Component {
+export default class GifScreen extends Component {
   static navigationOptions = {
     title: 'Cat',
   };

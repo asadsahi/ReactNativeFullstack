@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, TouchableHighlight, View } from 'react-native';
 import Colors from '../constants/Colors';
 
-export default class Button extends React.Component {
+export default class Button extends Component {
   render() {
     let style = [styles.button];
     if (this.props.disabled) {

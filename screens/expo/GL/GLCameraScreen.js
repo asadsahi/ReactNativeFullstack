@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Camera, GLView, Permissions } from 'expo';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
@@ -25,7 +25,7 @@ void main() {
   fragColor = vec4(1.0 - texture(cameraTexture, uv).rgb, 1.0);
 }`;
 
-class GLCameraScreen extends React.Component {
+class GLCameraScreen extends Component {
   static title = 'Expo.Camera integration';
 
   state = {

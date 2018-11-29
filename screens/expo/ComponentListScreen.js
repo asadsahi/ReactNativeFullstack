@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Alert,
   ListView,
@@ -15,7 +15,7 @@ import ExpoAPIIcon from '../../components/ExpoAPIIcon';
 import { ScrollView, withNavigation } from 'react-navigation';
 
 @withNavigation
-export default class ComponentListScreen extends React.Component {
+export default class ComponentListScreen extends Component {
   state = {
     dataSource: new ListView.DataSource({
       rowHasChanged: () => false,

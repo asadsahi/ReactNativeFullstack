@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, View, FlatList, Text, TouchableHighlight, PixelRatio } from 'react-native';
 import { Entypo } from '@expo/vector-icons';
 
 import * as examples from './examples';
 
-export default class SVGScreen extends React.Component {
+export default class SVGScreen extends Component {
   static navigationOptions = {
     title: '<Svg />',
   };

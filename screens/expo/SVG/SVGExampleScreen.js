@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, ScrollView, Text, View } from 'react-native';
 
 import * as examples from './examples';
 
-export default class SVGExampleScreen extends React.Component {
+export default class SVGExampleScreen extends Component {
   static navigationOptions = ({ navigation }) => {
     return {
       title: navigation.getParam('title', 'An SVG Example'),

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ActivityIndicator, ScrollView, Switch, Text, View } from 'react-native';
 import { Location, Permissions } from 'expo';
 import ListButton from '../../components/ListButton';
 
-export default class LocationScreen extends React.Component {
+export default class LocationScreen extends Component {
   static navigationOptions = {
     title: 'Location',
   };

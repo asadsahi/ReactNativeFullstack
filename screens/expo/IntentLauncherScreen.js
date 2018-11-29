@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Platform, ScrollView, Text, ToastAndroid, View } from 'react-native';
 import { IntentLauncherAndroid } from 'expo';
 import Button from '../../components/Button';
 
-export default class IntentLauncherScreen extends React.Component {
+export default class IntentLauncherScreen extends Component {
   static navigationOptions = {
     title: 'IntentLauncher',
   };

@@ -36,7 +36,7 @@ const Background = ({ index }) => (
   />
 );
 
-class DetailsScreen extends React.Component {
+class DetailsScreen extends Component {
   static navigationOptions = ({ navigation }) => {
     return {
       title: 'Details screen #' + navigation.getParam('index', '0'),

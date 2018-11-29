@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, View } from 'react-native';
 import { WebBrowser } from 'expo';
 import Button from '../../components/Button';
 
-export default class WebBrowserScreen extends React.Component {
+export default class WebBrowserScreen extends Component {
   static navigationOptions = {
     title: 'WebBrowser',
   };

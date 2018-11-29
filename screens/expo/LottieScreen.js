@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Animated,
   Button,
@@ -14,7 +14,7 @@ import {
 import { DangerZone } from 'expo';
 const { Lottie: Animation } = DangerZone;
 
-class ExamplePicker extends React.Component {
+class ExamplePicker extends Component {
   render() {
     return (
       <Picker
@@ -34,7 +34,7 @@ class ExamplePicker extends React.Component {
   }
 }
 
-class PlayerControls extends React.Component {
+class PlayerControls extends Component {
   onConfigChange(merge) {
     const newConfig = {
       ...this.props.config,
@@ -111,7 +111,7 @@ const EXAMPLES = [
   return acc;
 }, {});
 
-export default class LottieScreen extends React.Component {
+export default class LottieScreen extends Component {
   static navigationOptions = {
     title: '<Lottie />',
   };

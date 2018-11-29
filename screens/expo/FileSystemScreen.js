@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Alert,
   AsyncStorage,
@@ -12,7 +12,7 @@ import {
 import { Asset, FileSystem } from 'expo';
 import ListButton from '../../components/ListButton';
 
-export default class FileSystemScreen extends React.Component {
+export default class FileSystemScreen extends Component {
   static navigationOptions = {
     title: 'FileSystem',
   };

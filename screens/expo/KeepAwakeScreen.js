@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView, View } from 'react-native';
 import { KeepAwake } from 'expo';
 import Button from '../../components/Button';
 
-export default class KeepAwakeScreen extends React.Component {
+export default class KeepAwakeScreen extends Component {
   static navigationOptions = {
     title: 'KeepAwake',
   };

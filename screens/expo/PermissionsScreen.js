@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView, View, StyleSheet, Text, TouchableOpacity, Platform } from 'react-native';
 import { Permissions } from 'expo';
 
@@ -28,7 +28,7 @@ const customButtonStyles = StyleSheet.create({
   },
 });
 
-export default class PermissionsScreen extends React.Component {
+export default class PermissionsScreen extends Component {
   static navigationOptions = {
     title: 'Permissions',
   };

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, Platform, ScrollView, TextInput, View } from 'react-native';
 import { SecureStore } from 'expo';
 import ListButton from '../../components/ListButton';
 
-export default class SecureStoreScreen extends React.Component {
+export default class SecureStoreScreen extends Component {
   static navigationOptions = {
     title: 'SecureStore',
   };

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import { ScreenOrientation } from 'expo';
 import ListButton from '../../components/ListButton';
 
-export default class ScreenOrientationScreen extends React.Component {
+export default class ScreenOrientationScreen extends Component {
   static navigationOptions = {
     title: 'ScreenOrientation',
   };

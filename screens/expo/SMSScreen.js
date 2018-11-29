@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, StyleSheet, View, Button, TextInput, Platform, Text } from 'react-native';
 import { SMS, Permissions } from 'expo';
 
-export default class SMSScreen extends React.Component {
+export default class SMSScreen extends Component {
   static navigationOptions = {
     title: 'SMS',
   };

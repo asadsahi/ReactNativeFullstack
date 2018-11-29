@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { AuthSession, Constants } from 'expo';
 
@@ -17,7 +17,7 @@ function toQueryString(params) {
   );
 }
 
-export default class AuthSessionScreen extends React.Component {
+export default class AuthSessionScreen extends Component {
   static navigationOptions = {
     title: 'AuthSession',
   };

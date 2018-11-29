@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Image, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View, AsyncStorage, Button } from 'react-native';
 
 import { WebBrowser } from 'expo';
 
 import { StyledText } from '../components/StyledText';
 
-export default class HomeScreen extends React.Component {
+export default class HomeScreen extends Component {
   static navigationOptions = {
     title: 'Home',
   };

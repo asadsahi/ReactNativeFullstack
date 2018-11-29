@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Print, DocumentPicker, FileSystem } from 'expo';
 import ListButton from '../../components/ListButton';
 
-export default class PrintScreen extends React.Component {
+export default class PrintScreen extends Component {
   static navigationOptions = {
     title: 'Print',
   };

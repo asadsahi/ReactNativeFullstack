@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { FlatList } from 'react-native';
 
 import ContactsListItem from './ContactsListItem';
 
-export default class ContactsList extends React.Component {
+export default class ContactsList extends Component {
   onPressItem = id => {
     this.props.onPressItem && this.props.onPressItem(id);
   };

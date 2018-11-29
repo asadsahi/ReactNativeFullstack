@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Contacts, ImagePicker, Permissions } from 'expo';
-import React from 'react';
+import React, { Component } from 'react';
 import {
   ActionSheetIOS,
   Linking,
@@ -29,7 +29,7 @@ async function getPermissionAsync(permission) {
   return true;
 }
 
-export default class ContactDetailScreen extends React.Component {
+export default class ContactDetailScreen extends Component {
   static navigationOptions = ({ navigation }) => ({
     title: 'Contacts',
     headerRight: (

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { LinearGradient, takeSnapshotAsync } from 'expo';
 import { View, Text, Image, StyleSheet, ScrollView, Dimensions } from 'react-native';
 import { captureScreen } from 'react-native-view-shot';
@@ -8,7 +8,7 @@ import Button from '../../components/Button';
 // Source: https://codepen.io/zessx/pen/rDEAl <3
 const gradientColors = ['#90dffe', '#38a3d1'];
 
-export default class ViewShotScreen extends React.Component {
+export default class ViewShotScreen extends Component {
   static navigationOptions = {
     title: 'ViewShot',
   };

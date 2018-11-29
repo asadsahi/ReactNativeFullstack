@@ -1,12 +1,12 @@
 import { StoreReview } from 'expo';
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Button from '../../components/Button';
 import CannyFooter from '../../components/CannyFooter';
 import Colors from '../../constants/Colors';
 
-class StoreReviewScreen extends React.Component {
+class StoreReviewScreen extends Component {
   static navigationOptions = {
     title: 'Store Review',
   };

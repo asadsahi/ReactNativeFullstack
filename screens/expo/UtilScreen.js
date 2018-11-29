@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { AppState, ScrollView, Text, View } from 'react-native';
 import { DangerZone, Updates, Util } from 'expo';
 import Button from '../../components/Button';
 const { Localization } = DangerZone;
 
-export default class UtilScreen extends React.Component {
+export default class UtilScreen extends Component {
   static navigationOptions = {
     title: 'Util',
   };

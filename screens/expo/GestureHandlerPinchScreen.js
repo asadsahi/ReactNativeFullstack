@@ -10,7 +10,7 @@ import {
 
 const USE_NATIVE_DRIVER = true;
 
-class PinchableBox extends React.Component {
+class PinchableBox extends Component {
   panRef = React.createRef();
   rotationRef = React.createRef();
   pinchRef = React.createRef();
@@ -120,7 +120,7 @@ class PinchableBox extends React.Component {
   }
 }
 
-export default class GestureHandlerPinchScreen extends React.Component {
+export default class GestureHandlerPinchScreen extends Component {
   static navigationOptions = {
     title: 'Pinch and Rotate',
   };

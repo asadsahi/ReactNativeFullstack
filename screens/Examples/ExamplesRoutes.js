@@ -14,6 +14,7 @@
 
 const Routes = [
     { route: 'Expo', description: 'Expo Showcase', icon: 'lab-flask', iconType: 'entypo' },
+    { route: 'Navigation', description: 'React Navigation Showcase', icon: 'lab-flask', iconType: 'entypo' },
     { route: 'Todo', description: 'Todo list example', icon: 'tasklist', iconType: 'octicon' },
     { route: 'Flatlist', description: 'Flatlist example', icon: 'list-unordered', iconType: 'octicon' },
     { route: 'Camera', description: 'Camera (expo)', icon: 'camera' },

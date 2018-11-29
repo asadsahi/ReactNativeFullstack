@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { SectionList, Text } from 'react-native';
 
 import ContactDetailListItem from './ContactDetailListItem';
 import Colors from '../../../constants/Colors';
 
-export default class ContactDetailList extends React.Component {
+export default class ContactDetailList extends Component {
   renderItem = ({ item = {} }) => (
     <ContactDetailListItem key={item.id} contactId={item.id} {...item} />
   );

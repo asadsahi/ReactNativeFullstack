@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Icon } from 'react-native-elements';
 
 const DefaultNavigationOptions = ({ navigation }) => ({

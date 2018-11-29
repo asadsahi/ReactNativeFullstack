@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 import ListButton from '../../../components/ListButton';
 
 import GLScreens from './GLScreens';
 
-export default class GLScreen extends React.Component {
+export default class GLScreen extends Component {
   static navigationOptions = {
     title: 'Examples of GL use',
   };

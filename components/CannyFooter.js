@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Linking, StyleSheet, Text, View } from 'react-native';
 
 import Colors from '../constants/Colors';
@@ -6,7 +6,7 @@ import Button from './Button';
 
 const cannyUrl = `https://expo.canny.io/feature-requests`;
 
-export default class CannyFooter extends React.Component {
+export default class CannyFooter extends Component {
   onPress = () => {
     Linking.openURL(cannyUrl);
   };

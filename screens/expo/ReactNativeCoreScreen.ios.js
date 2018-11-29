@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   ActionSheetIOS,
   ActivityIndicator,
@@ -30,7 +30,7 @@ import Colors from '../../constants/Colors';
 import Layout from '../../constants/Layout';
 import ModalExample from './ModalExample';
 
-export default class ReactNativeCoreScreen extends React.Component {
+export default class ReactNativeCoreScreen extends Component {
   static navigationOptions = {
     title: 'React Native Core',
   };
@@ -404,7 +404,7 @@ export default class ReactNativeCoreScreen extends React.Component {
   };
 }
 
-class DatePickerExample extends React.Component {
+class DatePickerExample extends Component {
   state = {
     date: new Date(),
     timeZoneOffsetInHours: (-1 * new Date().getTimezoneOffset()) / 60,
@@ -426,7 +426,7 @@ class DatePickerExample extends React.Component {
   };
 }
 
-class PickerExample extends React.Component {
+class PickerExample extends Component {
   state = {
     language: 'js',
   };
@@ -446,7 +446,7 @@ class PickerExample extends React.Component {
   }
 }
 
-class ProgressViewExample extends React.Component {
+class ProgressViewExample extends Component {
   constructor(props) {
     super(props);
 
@@ -483,7 +483,7 @@ class ProgressViewExample extends React.Component {
   }
 }
 
-class SegmentedControlExample extends React.Component {
+class SegmentedControlExample extends Component {
   state = {
     selectedIndex: 0,
   };
@@ -522,7 +522,7 @@ class SegmentedControlExample extends React.Component {
   }
 }
 
-class SliderExample extends React.Component {
+class SliderExample extends Component {
   static defaultProps = {
     value: 0,
   };
@@ -550,7 +550,7 @@ class SliderExample extends React.Component {
   }
 }
 
-class SwitchExample extends React.Component {
+class SwitchExample extends Component {
   state = {
     trueSwitchIsOn: true,
     falseSwitchIsOn: false,
@@ -573,7 +573,7 @@ class SwitchExample extends React.Component {
   }
 }
 
-class TextInputExample extends React.Component {
+class TextInputExample extends Component {
   state = {
     singleLineValue: '',
     secureTextValue: '',

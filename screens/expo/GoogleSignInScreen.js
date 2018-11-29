@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { GoogleSignIn, Localization } from 'expo';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
 import GoogleSignInButton from '../../components/GoogleSignInButton';
 
-export default class GoogleSignInScreen extends React.Component {
+export default class GoogleSignInScreen extends Component {
   static navigationOptions = {
     title: 'Google Sign-In',
   };

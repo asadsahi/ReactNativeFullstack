@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 const ifStyle = s => (s === undefined ? [] : [s]);
 
-export default class MonoText extends React.Component {
+export default class MonoText extends Component {
   render() {
     const { containerStyle, textStyle } = this.props;
     return (

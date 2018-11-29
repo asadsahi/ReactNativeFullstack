@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Permissions, MediaLibrary } from 'expo';
 import {
   ActivityIndicator,
@@ -40,7 +40,7 @@ const sortByStates = {
   [SortBy.duration]: SortBy.default,
 };
 
-export default class MediaLibraryScreen extends React.Component {
+export default class MediaLibraryScreen extends Component {
   static navigationOptions = ({ navigation }) => {
     const goToAlbums = () => navigation.navigate('MediaAlbums');
     const clearAlbumSelection = () => navigation.pop(2);

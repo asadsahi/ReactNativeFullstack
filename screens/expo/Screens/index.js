@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Text,
   View,
@@ -16,7 +16,7 @@ const SCREENS = {
   Navigation: { screen: Navigation, title: 'React Navigation example' },
 };
 
-class MainScreen extends React.Component {
+class MainScreen extends Component {
   static navigationOptions = {
     title: '📱 React Native Screens Examples',
   };
@@ -40,7 +40,7 @@ class MainScreen extends React.Component {
 
 const ItemSeparator = () => <View style={styles.separator} />;
 
-class MainScreenItem extends React.Component {
+class MainScreenItem extends Component {
   _onPress = () => this.props.onPressItem(this.props.item);
   render() {
     const { key } = this.props.item;

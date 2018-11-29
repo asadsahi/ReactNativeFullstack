@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { MediaLibrary } from 'expo';
 import { Image, ScrollView, StyleSheet, View } from 'react-native';
 
@@ -8,7 +8,7 @@ import HeadingText from '../../../components/HeadingText';
 
 const EXPO_ALBUM_NAME = 'Expo';
 
-export default class MediaDetailsScreen extends React.Component {
+export default class MediaDetailsScreen extends Component {
   static navigationOptions = {
     title: 'MediaLibrary Asset',
   };

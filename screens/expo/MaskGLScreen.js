@@ -1,8 +1,4 @@
-/**
- * @flow
- */
-
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, MaskedViewIOS, View } from 'react-native';
 import { GLView } from 'expo';
 
@@ -21,7 +17,7 @@ void main () {
   gl_FragColor = vec4(uv.x, uv.y, 0.5, 1.0);
 }`;
 
-export default class MaskGLScreen extends React.Component {
+export default class MaskGLScreen extends Component {
   static navigationOptions = {
     title: 'Mask GLView Example',
   };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ActivityIndicator, InteractionManager, StyleSheet, View } from 'react-native';
 import { GLView } from 'expo';
 
@@ -9,7 +9,7 @@ import hsv2rgb from 'hsv2rgb';
 const NUM_POINTS = 1e4;
 const VERT_SIZE = 4 * (4 + 4 + 3);
 
-export default class BasicScene extends React.Component {
+export default class BasicScene extends Component {
   static navigationOptions = {
     title: '<GLView />',
   };

@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Contacts, Permissions } from 'expo';
-import React from 'react';
+import React, { Component } from 'react';
 import { RefreshControl, StyleSheet, Text, View } from 'react-native';
 import { NavigationEvents } from 'react-navigation';
 import HeaderButtons from 'react-navigation-header-buttons';
@@ -10,7 +10,7 @@ import * as ContactUtils from './ContactUtils';
 
 const CONTACT_PAGE_SIZE = 500;
 
-export default class ContactsScreen extends React.Component {
+export default class ContactsScreen extends Component {
   static navigationOptions = () => {
     return {
       title: 'Contacts',

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, TouchableHighlight, PixelRatio, View } from 'react-native';
 import Colors from '../constants/Colors';
 
-export default class ListButton extends React.Component {
+export default class ListButton extends Component {
   render() {
     let style = [styles.button],
       labelStyles = [styles.label];

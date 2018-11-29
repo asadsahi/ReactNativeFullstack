@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, Button, StyleSheet, Text, View } from 'react-native';
 import { Constants, DangerZone } from 'expo';
 
 const { Branch } = DangerZone;
 
-export default class BranchScreen extends React.Component {
+export default class BranchScreen extends Component {
   static navigationOptions = {
     title: 'Branch',
   };

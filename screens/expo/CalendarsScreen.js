@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Calendar, Permissions } from 'expo';
 import Button from '../../components/Button';
@@ -7,7 +7,7 @@ import HeadingText from '../../components/HeadingText';
 import ListButton from '../../components/ListButton';
 import MonoText from '../../components/MonoText';
 
-class CalendarRow extends React.Component {
+class CalendarRow extends Component {
   static navigationOptions = {
     title: 'Calendars',
   };
@@ -38,7 +38,7 @@ class CalendarRow extends React.Component {
   }
 }
 
-export default class CalendarsScreen extends React.Component {
+export default class CalendarsScreen extends Component {
   static navigationOptions = {
     title: 'Calendars',
   };

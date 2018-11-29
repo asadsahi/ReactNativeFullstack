@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView, View } from 'react-native';
 import { Constants } from 'expo';
 import Colors from '../../constants/Colors';
 import HeadingText from '../../components/HeadingText';
 import MonoText from '../../components/MonoText';
 
-class ExpoConstant extends React.Component {
+class ExpoConstant extends Component {
   state = {
     value: null,
     error: null,
@@ -54,7 +54,7 @@ class ExpoConstant extends React.Component {
   }
 }
 
-export default class ConstantsScreen extends React.Component {
+export default class ConstantsScreen extends Component {
   static navigationOptions = {
     title: 'Constants',
   };

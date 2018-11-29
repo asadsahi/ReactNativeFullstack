@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, Platform } from 'react-native';
 import { DangerZone, Notifications } from 'expo';
 import ComponentListScreen from './ComponentListScreen';
@@ -9,7 +9,7 @@ DangerZone.Branch.subscribe(bundle => {
   }
 });
 
-export default class ExpoApisScreen extends React.Component {
+export default class ExpoApisScreen extends Component {
   static navigationOptions = {
     title: 'APIs in Expo SDK',
   };

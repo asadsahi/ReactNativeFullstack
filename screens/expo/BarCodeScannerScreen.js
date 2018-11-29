@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavigationEvents } from 'react-navigation';
 import { Button, Platform, StyleSheet, Text, View } from 'react-native';
 
@@ -6,7 +6,7 @@ import { BarCodeScanner, Permissions } from 'expo';
 
 const BUTTON_COLOR = Platform.OS === 'ios' ? '#fff' : '#666';
 
-export default class BarcodeScannerExample extends React.Component {
+export default class BarcodeScannerExample extends Component {
   static navigationOptions = {
     title: '<BarCodeScanner />',
   };

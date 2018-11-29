@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView, StyleSheet, TouchableOpacity, Text, View, Image } from 'react-native';
 import { Asset, ImageManipulator, MediaLibrary, Permissions } from 'expo';
 import { Ionicons } from '@expo/vector-icons';
 
 import Colors from '../../constants/Colors';
 
-export default class ImageManipulatorScreen extends React.Component {
+export default class ImageManipulatorScreen extends Component {
   static navigationOptions = {
     title: 'ImageManipulator',
   };

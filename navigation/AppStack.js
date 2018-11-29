@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { createDrawerNavigator } from 'react-navigation';
 
 import CustomDrawerContentComponent from '../components/CustomDrawerContentComponent';

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, ScrollView } from 'react-native';
 
 import { Accelerometer, Gyroscope, Magnetometer, MagnetometerUncalibrated, DangerZone } from 'expo';
@@ -7,7 +7,7 @@ const { DeviceMotion } = DangerZone;
 const FAST_INTERVAL = 16;
 const SLOW_INTERVAL = 1000;
 
-export default class SensorScreen extends React.Component {
+export default class SensorScreen extends Component {
   static navigationOptions = {
     title: 'Sensors',
   };
@@ -25,7 +25,7 @@ export default class SensorScreen extends React.Component {
   }
 }
 
-class SensorBlock extends React.Component {
+class SensorBlock extends Component {
   state = {
     data: {},
   };

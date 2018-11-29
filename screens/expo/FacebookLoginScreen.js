@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, ScrollView, View } from 'react-native';
 import { Facebook } from 'expo';
 import ListButton from '../../components/ListButton';
 
-export default class FacebookLoginScreen extends React.Component {
+export default class FacebookLoginScreen extends Component {
   static navigationOptions = {
     title: 'FacebookLogin',
   };

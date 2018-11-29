@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { MediaLibrary } from 'expo';
 import { View, Image, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
-export default class MediaLibraryCell extends React.Component {
+export default class MediaLibraryCell extends Component {
   static propTypes = {
     asset: PropTypes.object.isRequired,
     onPress: PropTypes.func.isRequired,

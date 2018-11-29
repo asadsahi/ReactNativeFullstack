@@ -1,13 +1,9 @@
-/**
- * @flow
- */
-
-import React from 'react';
+import React, { Component } from 'react';
 import { Animated, Easing, Image, MaskedViewIOS, View } from 'react-native';
 
 const AnimatedMaskView = Animated.createAnimatedComponent(MaskedViewIOS);
 
-export default class BasicMaskScreen extends React.Component {
+export default class BasicMaskScreen extends Component {
   static navigationOptions = {
     title: 'Basic Mask Example',
   };

@@ -1,17 +1,15 @@
-// @flow
-
-import React from 'react';
+import React, { Component } from 'react';
 import { Alert, ScrollView, Text } from 'react-native';
 import { Pedometer } from 'expo';
 import ListButton from '../../components/ListButton';
 
-export default class PedometerScreen extends React.Component {
+export default class PedometerScreen extends Component {
   static navigationOptions = {
     title: 'Pedometer',
   };
 
   state = { stepCount: null };
-  _listener: { remove: () => void } = null;
+  _listener = null;
 
   render() {
     return (

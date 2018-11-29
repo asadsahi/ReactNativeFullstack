@@ -1,5 +1,5 @@
 import { LinearGradient } from 'expo';
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, ScrollView, View, Image } from 'react-native';
 
 function incrementColor(color, step) {
@@ -8,7 +8,7 @@ function incrementColor(color, step) {
   return `#${'0'.repeat(6 - newIntColor.length)}${newIntColor}`;
 }
 
-export default class LinearGradientScreen extends React.Component {
+export default class LinearGradientScreen extends Component {
   static navigationOptions = {
     title: 'LinearGradient',
   };
