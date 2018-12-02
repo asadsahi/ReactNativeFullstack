@@ -27,7 +27,7 @@ import TabsWithNavigationFocus from './TabsWithNavigationFocus';
 import TabsWithNavigationEvents from './TabsWithNavigationEvents';
 import KeyboardHandlingExample from './KeyboardHandlingExample';
 
-ScreenOrientation.allow(ScreenOrientation.Orientation.ALL);
+// ScreenOrientation.allow(ScreenOrientation.Orientation.ALL);
 
 process.env.REACT_NAV_LOGGING = true;
 

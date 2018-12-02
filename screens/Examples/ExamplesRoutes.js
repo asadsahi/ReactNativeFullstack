@@ -13,14 +13,16 @@
 //   | string;
 
 const Routes = [
-    { route: 'Expo', description: 'Expo Showcase', icon: 'lab-flask', iconType: 'entypo' },
-    { route: 'Navigation', description: 'React Navigation Showcase', icon: 'lab-flask', iconType: 'entypo' },
-    { route: 'Todo', description: 'Todo list example', icon: 'tasklist', iconType: 'octicon' },
-    { route: 'Flatlist', description: 'Flatlist example', icon: 'list-unordered', iconType: 'octicon' },
-    { route: 'Camera', description: 'Camera (expo)', icon: 'camera' },
-    { route: 'BarcodeScanner', description: 'Barcode scanner (expo)', icon: 'barcode-scan' },
-    { route: 'AudioVideo', description: 'Audio Video (expo)', icon: 'audio-video' },
-    { route: 'Brightness', description: 'Brightness (expo)', icon: 'brightness-6' },
+    { route: 'Expo', description: 'Expo', icon: 'lab-flask', iconType: 'entypo' },
+    { route: 'Navigation', description: 'Navigation', icon: 'credit-card-multiple', iconType: 'material-community' },
+    { route: 'NativeElements', description: 'Native Elements', icon: 'react', iconType: 'material-community' },
+    { route: 'Animations', description: 'Animations', icon: 'animation', iconType: 'material-community' },
+    { route: 'Todo', description: 'Todo', icon: 'tasklist', iconType: 'octicon' },
+    { route: 'Flatlist', description: 'Flatlist', icon: 'list-unordered', iconType: 'octicon' },
+    { route: 'Camera', description: 'Camera', icon: 'camera' },
+    { route: 'BarcodeScanner', description: 'Barcode scanner', icon: 'barcode-scan' },
+    { route: 'AudioVideo', description: 'Audio Video', icon: 'audio-video' },
+    { route: 'Brightness', description: 'Brightness', icon: 'brightness-6' },
 ];
 
 export default Routes;
