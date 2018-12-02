@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from 'react-navigation';
 
-// import Components from './drawer/components';
+import Components from './drawer/components';
 import Login from './drawer/login';
 import Profile from './drawer/profile';
 import Lists from './drawer/lists';
@@ -12,7 +12,7 @@ import Settings from './drawer/settings';
 
 const NativeElementsNavigator = createBottomTabNavigator(
   {
-    // Components,
+    Components,
     Login,
     Profile,
     Lists,
@@ -23,9 +23,6 @@ const NativeElementsNavigator = createBottomTabNavigator(
   {
     // initialRouteName: 'Components',
     // contentComponent: CustomDrawerContentComponent,
-    // drawerOpenRoute: 'DrawerOpen',
-    // drawerCloseRoute: 'DrawerClose',
-    // drawerToggleRoute: 'DrawerToggle',
   }
 );
 

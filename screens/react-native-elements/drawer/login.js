@@ -4,28 +4,27 @@ import { Icon } from 'react-native-elements';
 
 import Login from '../views/login';
 
-const LoginDrawerItem = createStackNavigator({
+const LoginScreen = createStackNavigator({
   Playground: { screen: Login }
-  },
+},
   {
-    headerMode: 'none'
+    headerMode: 'none',
+    navigationOptions: {
+      tabBarLabel: 'Login',
+      tabBarIcon: ({ tintColor }) => (
+        <Icon
+          name="email"
+          size={30}
+          iconStyle={{
+            width: 30,
+            height: 30
+          }}
+          type="material"
+          color={tintColor}
+        />
+      ),
+    }
   }
 );
 
-LoginDrawerItem.navigationOptions = {
-  drawerLabel: 'Login',
-  drawerIcon: ({ tintColor }) => (
-    <Icon
-      name="email"
-      size={30}
-      iconStyle={{
-        width: 30,
-        height: 30
-      }}
-      type="material"
-      color={tintColor}
-    />
-  ),
-};
-
-export default LoginDrawerItem;
+export default LoginScreen;

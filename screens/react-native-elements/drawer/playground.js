@@ -23,8 +23,8 @@ const PlaygroundDrawerItem = createStackNavigator({
 });
 
 PlaygroundDrawerItem.navigationOptions = {
-  drawerLabel: 'Playground',
-  drawerIcon: ({ tintColor }) => (
+  tabBarLabel: 'Playground',
+  tabBarIcon: ({ tintColor }) => (
     <Icon
       name="brush"
       size={30}

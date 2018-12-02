@@ -1,5 +1,6 @@
 import React from 'react';
-import { createTabNavigator, createStackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
+import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
 import { Icon } from 'react-native-elements';
 
 import ButtonsTab from '../tabs/buttons';
@@ -7,7 +8,7 @@ import ListsTab from '../tabs/lists';
 import InputTab from '../tabs/input';
 import FontsTab from '../tabs/fonts';
 
-const Components = createTabNavigator(
+const Components = createMaterialBottomTabNavigator(
   {
     ButtonsTab: {
       screen: ButtonsTab,
@@ -75,22 +76,6 @@ const Components = createTabNavigator(
   }
 );
 
-Components.navigationOptions = {
-  drawerLabel: 'Components',
-  drawerIcon: ({ tintColor }) => (
-    <Icon
-      name="settings"
-      size={30}
-      iconStyle={{
-        width: 30,
-        height: 30
-      }}
-      type="material"
-      color={tintColor}
-    />
-  ),
-};
-
 // Workaround to avoid crashing when you come back on Components screen
 // and you were not on the Buttons tab
 export default createStackNavigator(
@@ -98,6 +83,19 @@ export default createStackNavigator(
     Components
   },
   {
-    // headerMode: 'none',
+    headerMode: 'none',
+    tabBarLabel: 'Components',
+    tabBarIcon: ({ tintColor }) => (
+      <Icon
+        name="settings"
+        size={30}
+        iconStyle={{
+          width: 30,
+          height: 30
+        }}
+        type="material"
+        color={tintColor}
+      />
+    ),
   }
 );

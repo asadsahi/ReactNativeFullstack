@@ -13,8 +13,8 @@ const ListsDrawerItem = createStackNavigator({
 );
 
 ListsDrawerItem.navigationOptions = {
-  drawerLabel: 'Lists',
-  drawerIcon: ({ tintColor }) => (
+  tabBarLabel: 'Lists',
+  tabBarIcon: ({ tintColor }) => (
     <Icon
       name="list"
       size={30}

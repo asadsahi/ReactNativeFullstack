@@ -13,8 +13,8 @@ const ProfileDrawerItem = createStackNavigator({
 );
 
 ProfileDrawerItem.navigationOptions = {
-  drawerLabel: 'Profile',
-  drawerIcon: ({ tintColor }) => (
+  tabBarLabel: 'Profile',
+  tabBarIcon: ({ tintColor }) => (
     <Icon
       name="person"
       size={30}

@@ -15,11 +15,11 @@ import NativeElementsNavigator from '../react-native-elements/NativeElementsNavi
 import AnimationsNavigator from './Animations/AnimationsNavigator';
 
 const ExamplesStack = createStackNavigator({
+    Examples: ExamplesScreen,
     NativeElements: NativeElementsNavigator,
     Animations: AnimationsNavigator,
     Expo: ExpoTabNavigator,
     Navigation: NavigationStackNavigator,
-    Examples: ExamplesScreen,
     Todo: TodoScreen,
     Flatlist: FlatlistScreen,
     Camera: CameraScreen,
@@ -27,7 +27,6 @@ const ExamplesStack = createStackNavigator({
     AudioVideo: AudioVideoScreen,
     Brightness: BrightnessScreen,
 }, {
-        initialRouteName: "Examples",
         defaultNavigationOptions: DefaultNavigationOptions,
     });
 

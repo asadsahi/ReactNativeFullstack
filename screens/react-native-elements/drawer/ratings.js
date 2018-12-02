@@ -11,8 +11,8 @@ const RatingsDrawerItem = createStackNavigator({
 });
 
 RatingsDrawerItem.navigationOptions = {
-  drawerLabel: 'Ratings',
-  drawerIcon: ({ tintColor }) => (
+  tabBarLabel: 'Ratings',
+  tabBarIcon: ({ tintColor }) => (
     <Icon
       name="star"
       size={30}

@@ -28,8 +28,8 @@ const SettingsDrawerItem = createStackNavigator({
 });
 
 SettingsDrawerItem.navigationOptions = {
-  drawerLabel: 'Settings',
-  drawerIcon: ({ tintColor }) => (
+  tabbarLabel: 'Settings',
+  tabBarIcon: ({ tintColor }) => (
     <Icon
       name="cog"
       size={30}

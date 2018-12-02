@@ -23,8 +23,8 @@ const PricingDrawerItem = createStackNavigator({
 });
 
 PricingDrawerItem.navigationOptions = {
-  drawerLabel: 'Pricing',
-  drawerIcon: ({ tintColor }) => (
+  tabBarLabel: 'Pricing',
+  tabBarIcon: ({ tintColor }) => (
     <Icon
       name="attach-money"
       size={30}
