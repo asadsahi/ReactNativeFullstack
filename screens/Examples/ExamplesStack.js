@@ -13,9 +13,11 @@ import ExpoTabNavigator from '../expo/ExpoTabNavigator';
 import NavigationStackNavigator from '../navigation/NavigationStackNavigator';
 import NativeElementsNavigator from '../react-native-elements/NativeElementsNavigator';
 import AnimationsNavigator from './Animations/AnimationsNavigator';
+import VictoryNativeNavigator from '../victory-native/VictoryNativeNavigator';
 
 const ExamplesStack = createStackNavigator({
     Examples: ExamplesScreen,
+    VictoryGraphs: VictoryNativeNavigator,
     NativeElements: NativeElementsNavigator,
     Animations: AnimationsNavigator,
     Expo: ExpoTabNavigator,
