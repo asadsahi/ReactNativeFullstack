@@ -31,6 +31,7 @@ export default {
   TextToSpeech: require('../assets/icons/api/Speech.png'),
   Video: require('../assets/icons/api/Video.png'),
   WebBrowser: require('../assets/icons/api/WebBrowser.png'),
+  SqliteTodo: require('../assets/icons/api/Print.png'),
 
   Default: require('../assets/icons/api/Placeholder.png'),
 };

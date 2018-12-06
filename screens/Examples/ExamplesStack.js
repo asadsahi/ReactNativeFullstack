@@ -14,9 +14,11 @@ import NavigationStackNavigator from '../navigation/NavigationStackNavigator';
 import NativeElementsNavigator from '../react-native-elements/NativeElementsNavigator';
 import AnimationsNavigator from './Animations/AnimationsNavigator';
 import VictoryNativeNavigator from '../victory-native/VictoryNativeNavigator';
+import CrudNavigator from '../crud/CrudNavigator';
 
 const ExamplesStack = createStackNavigator({
     Examples: ExamplesScreen,
+    Crud: CrudNavigator,
     VictoryGraphs: VictoryNativeNavigator,
     NativeElements: NativeElementsNavigator,
     Animations: AnimationsNavigator,

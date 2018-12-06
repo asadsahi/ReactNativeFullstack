@@ -93,6 +93,7 @@ export default class ExpoApisScreen extends Component {
       'Util',
       'WebBrowser',
       'ViewShot',
+      'SqliteTodo',
     ];
   };
 }

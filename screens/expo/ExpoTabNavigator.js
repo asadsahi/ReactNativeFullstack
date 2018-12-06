@@ -67,6 +67,7 @@ import SMSScreen from './SMSScreen';
 import ScreensScreen from './Screens';
 import PermissionsScreen from './PermissionsScreen';
 import ViewShotScreen from './ViewShotScreen';
+import SqliteTodo from './SqliteTodo';
 
 const styles = StyleSheet.create({
     tabBar: {
@@ -160,6 +161,7 @@ const ExpoApisStackNavigator = createStackNavigator(
         Util: { screen: UtilScreen },
         WebBrowser: { screen: WebBrowserScreen },
         ViewShot: { screen: ViewShotScreen },
+        SqliteTodo: { screen: SqliteTodo },
     },
     StackConfig
 );

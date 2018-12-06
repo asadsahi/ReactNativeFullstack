@@ -14,6 +14,7 @@
 
 const Routes = [
     { route: 'Expo', description: 'Expo', icon: 'lab-flask', iconType: 'entypo' },
+    { route: 'Crud', description: 'Crud', icon: 'table-edit', iconType: 'material-community' },
     { route: 'VictoryGraphs', description: 'Victory Graphs', icon: 'graph', iconType: 'octicon' },
     { route: 'Navigation', description: 'Navigation', icon: 'credit-card-multiple', iconType: 'material-community' },
     { route: 'NativeElements', description: 'Native Elements', icon: 'react', iconType: 'material-community' },
