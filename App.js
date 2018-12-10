@@ -21,7 +21,8 @@ export default class App extends Component {
       return (
         <View style={styles.container}>
           {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-          <AppNavigator />
+          {/* Disables logging for each navigation */}
+          <AppNavigator onNavigationStateChange={null} />
         </View>
       );
     }

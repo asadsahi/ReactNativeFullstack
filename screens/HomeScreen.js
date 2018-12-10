@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { Image, Platform, ScrollView, StyleSheet, Text, TouchableOpacity, View, AsyncStorage, Button } from 'react-native';
-
 import { WebBrowser } from 'expo';
-
-import { StyledText } from '../components/StyledText';
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View, AsyncStorage, Button } from 'react-native';
 
 export default class HomeScreen extends Component {
   static navigationOptions = {
@@ -25,33 +22,26 @@ export default class HomeScreen extends Component {
               style={styles.welcomeImage}
             />
           </View>
-          <View style={styles.helpContainer}>
+          <View style={styles.alignCenter}>
             <Button title="Explore examples" onPress={() => navigation.navigate("Examples")}></Button>
           </View>
 
-          <View style={styles.getStartedContainer}>
+          <View style={styles.alignCenter}>
             {this._maybeRenderDevelopmentModeWarning()}
 
-            <Text style={styles.getStartedText}>Get started by opening</Text>
-
-
-            <View style={styles.helpContainer}>
+            <View style={styles.alignCenter}>
               <Button title="Logout" onPress={() => this.signOutAsync()}></Button>
             </View>
 
           </View>
 
-          <View style={styles.helpContainer}>
+          <View style={styles.alignCenter}>
             <TouchableOpacity onPress={this._handleHelpPress} style={styles.helpLink}>
               <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
             </TouchableOpacity>
           </View>
 
         </ScrollView>
-
-        <View style={styles.tabBarInfoContainer}>
-          <Text style={styles.tabBarInfoText}>This is a tab bar. You can edit it in:</Text>
-        </View>
       </View>
     );
   }
@@ -124,46 +114,7 @@ const styles = StyleSheet.create({
     marginTop: 3,
     marginLeft: -10,
   },
-  getStartedContainer: {
-    alignItems: 'center',
-    marginHorizontal: 50,
-  },
-
-  codeHighlightText: {
-    color: 'rgba(96,100,109, 0.8)',
-  },
-  getStartedText: {
-    fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
-    lineHeight: 24,
-    textAlign: 'center',
-  },
-  tabBarInfoContainer: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    ...Platform.select({
-      ios: {
-        shadowColor: 'black',
-        shadowOffset: { height: -3 },
-        shadowOpacity: 0.1,
-        shadowRadius: 3,
-      },
-      android: {
-        elevation: 20,
-      },
-    }),
-    alignItems: 'center',
-    backgroundColor: '#fbfbfb',
-    paddingVertical: 20,
-  },
-  tabBarInfoText: {
-    fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
-    textAlign: 'center',
-  },
-  helpContainer: {
+  alignCenter: {
     marginTop: 15,
     alignItems: 'center',
   },

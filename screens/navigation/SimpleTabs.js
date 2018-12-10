@@ -65,6 +65,7 @@ MyHomeScreen.navigationOptions = {
   ),
 };
 MyListScreen.navigationOptions = MyHomeScreen.navigationOptions;
+const DEBUG = false;
 
 class MyPeopleScreen extends Component {
   _s0;
@@ -95,7 +96,7 @@ class MyPeopleScreen extends Component {
     // this._s3.remove();
   }
   _onEvent = a => {
-    console.log('EVENT ON PEOPLE TAB', a.type, a);
+    DEBUG && console.log('EVENT ON PEOPLE TAB', a.type, a);
   };
   render() {
     const { navigation } = this.props;
@@ -132,7 +133,7 @@ class MyChatScreen extends Component {
     // this._s3.remove();
   }
   _onEvent = a => {
-    console.log('EVENT ON CHAT TAB', a.type, a);
+    DEBUG && console.log('EVENT ON CHAT TAB', a.type, a);
   };
   render() {
     const { navigation } = this.props;
@@ -201,7 +202,7 @@ class SimpleTabsContainer extends Component {
     // this._s3.remove();
   }
   _onAction = a => {
-    console.log('TABS EVENT', a.type, a);
+    DEBUG && console.log('TABS EVENT', a.type, a);
   };
   render() {
     return <SimpleTabs navigation={this.props.navigation} />;

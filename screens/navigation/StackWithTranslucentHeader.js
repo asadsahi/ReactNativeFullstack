@@ -9,6 +9,7 @@ import invariant from 'invariant';
 import SampleText from './SampleText';
 import { Button } from './commonComponents/ButtonWithMargin';
 import { HeaderButtons } from './commonComponents/HeaderButtons';
+const DEBUG = false;
 
 class MyNavScreen extends Component {
   render() {
@@ -92,16 +93,16 @@ class MyHomeScreen extends Component {
     this._s3.remove();
   }
   _onWF = a => {
-    console.log('_willFocus HomeScreen', a);
+    DEBUG && console.log('_willFocus HomeScreen', a);
   };
   _onDF = a => {
-    console.log('_didFocus HomeScreen', a);
+    DEBUG && console.log('_didFocus HomeScreen', a);
   };
   _onWB = a => {
-    console.log('_willBlur HomeScreen', a);
+    DEBUG && console.log('_willBlur HomeScreen', a);
   };
   _onDB = a => {
-    console.log('_didBlur HomeScreen', a);
+    DEBUG && console.log('_didBlur HomeScreen', a);
   };
 
   render() {
@@ -132,16 +133,16 @@ class MyPhotosScreen extends Component {
     this._s3.remove();
   }
   _onWF = a => {
-    console.log('_willFocus PhotosScreen', a);
+    DEBUG && console.log('_willFocus PhotosScreen', a);
   };
   _onDF = a => {
-    console.log('_didFocus PhotosScreen', a);
+    DEBUG && console.log('_didFocus PhotosScreen', a);
   };
   _onWB = a => {
-    console.log('_willBlur PhotosScreen', a);
+    DEBUG && console.log('_willBlur PhotosScreen', a);
   };
   _onDB = a => {
-    console.log('_didBlur PhotosScreen', a);
+    DEBUG && console.log('_didBlur PhotosScreen', a);
   };
 
   render() {
