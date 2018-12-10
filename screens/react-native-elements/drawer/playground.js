@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements';
 
 import Playground from '../views/playground';
 
-const PlaygroundDrawerItem = createStackNavigator({
+const PlaygroundStackItem = createStackNavigator({
   Playground: {
     screen: Playground,
     navigationOptions: ({ navigation }) => ({
@@ -22,7 +22,7 @@ const PlaygroundDrawerItem = createStackNavigator({
   },
 });
 
-PlaygroundDrawerItem.navigationOptions = {
+PlaygroundStackItem.navigationOptions = {
   tabBarLabel: 'Playground',
   tabBarIcon: ({ tintColor }) => (
     <Icon
@@ -38,4 +38,4 @@ PlaygroundDrawerItem.navigationOptions = {
   ),
 };
 
-export default PlaygroundDrawerItem;
+export default PlaygroundStackItem;

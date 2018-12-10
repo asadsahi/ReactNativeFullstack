@@ -1,7 +1,7 @@
 import React from "react";
 import { ScrollView, Dimensions } from "react-native";
 import { VictoryLegend } from "victory-native";
-import Svg from "react-native-svg";
+import { Svg } from 'expo';
 import viewStyles from "../styles/view-styles";
 
 const legendData = [

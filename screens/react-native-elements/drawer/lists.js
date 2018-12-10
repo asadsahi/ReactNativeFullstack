@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements';
 
 import Lists from '../views/lists';
 
-const ListsDrawerItem = createStackNavigator({
+const ListStackItem = createStackNavigator({
   Playground: { screen: Lists }
 },
   {
@@ -12,7 +12,7 @@ const ListsDrawerItem = createStackNavigator({
   }
 );
 
-ListsDrawerItem.navigationOptions = {
+ListStackItem.navigationOptions = {
   tabBarLabel: 'Lists',
   tabBarIcon: ({ tintColor }) => (
     <Icon
@@ -28,4 +28,4 @@ ListsDrawerItem.navigationOptions = {
   ),
 };
 
-export default ListsDrawerItem;
+export default ListStackItem;

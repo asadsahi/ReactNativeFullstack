@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements';
 
 import Profile from '../views/profile';
 
-const ProfileDrawerItem = createStackNavigator({
+const ProfileStackItem = createStackNavigator({
     Playground: { screen: Profile }
   },
   {
@@ -12,7 +12,7 @@ const ProfileDrawerItem = createStackNavigator({
   }
 );
 
-ProfileDrawerItem.navigationOptions = {
+ProfileStackItem.navigationOptions = {
   tabBarLabel: 'Profile',
   tabBarIcon: ({ tintColor }) => (
     <Icon
@@ -28,4 +28,4 @@ ProfileDrawerItem.navigationOptions = {
   ),
 };
 
-export default ProfileDrawerItem;
+export default ProfileStackItem;

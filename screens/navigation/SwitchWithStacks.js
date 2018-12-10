@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
 });
 
 const AppStack = createStackNavigator({ Home: HomeScreen, Other: OtherScreen });
-const AuthStack = createStackNavigator({ SignIn: SignInScreen });
+const AuthStack = createStackNavigator({ SignInReactNavigation: SignInScreen });
 
 export default createSwitchNavigator({
   Loading: LoadingScreen,

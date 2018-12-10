@@ -1,5 +1,7 @@
 import React from "react";
-import Svg, { Polygon } from "react-native-svg";
+import { Svg } from 'expo';
+
+const { Polygon } = Svg;
 
 export default () => (
   <Svg width={10} height={15} viewBox="0 0 10 15">

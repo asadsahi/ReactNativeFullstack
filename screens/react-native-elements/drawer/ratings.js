@@ -4,13 +4,13 @@ import { Icon } from 'react-native-elements';
 
 import Ratings from '../views/ratings';
 
-const RatingsDrawerItem = createStackNavigator({
+const RatingStackItem = createStackNavigator({
   Ratings: {
     screen: Ratings,
   },
 });
 
-RatingsDrawerItem.navigationOptions = {
+RatingStackItem.navigationOptions = {
   tabBarLabel: 'Ratings',
   tabBarIcon: ({ tintColor }) => (
     <Icon
@@ -26,4 +26,4 @@ RatingsDrawerItem.navigationOptions = {
   ),
 };
 
-export default RatingsDrawerItem;
+export default RatingStackItem;

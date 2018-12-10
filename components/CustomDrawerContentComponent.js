@@ -3,7 +3,11 @@ import { StyleSheet, ScrollView, AsyncStorage } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import { DrawerItems, SafeAreaView } from 'react-navigation';
 
-const routes = ["Home", "Links", "Settings"];
+const routes = [
+    { route: "AppHome", title: 'Home' },
+    { route: "Links", title: "Links" },
+    { route: "Settings", title: "Settings" }
+];
 
 class CustomDrawerContentComponent extends Component {
     render() {
@@ -13,8 +17,8 @@ class CustomDrawerContentComponent extends Component {
                 <SafeAreaView style={styles.container} forceInset={{ top: 'always', horizontal: 'never' }}>
                     <>
                         {
-                            routes.map((route, index) => (
-                                <ListItem key={index} title={route} onPress={() => navigation.navigate(route)} />
+                            routes.map((r, index) => (
+                                <ListItem key={index} title={r.title} onPress={() => navigation.navigate(r.route)} />
                             ))
                         }
                         <ListItem key="logout" title="Logout" onPress={() => this.signOutAsync()} />
@@ -27,7 +31,7 @@ class CustomDrawerContentComponent extends Component {
     signOutAsync = async () => {
         const { navigation } = this.props;
         await AsyncStorage.clear();
-        navigation.navigate('Auth');
+        navigation.navigate('AppAuth');
     };
 }
 

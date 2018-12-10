@@ -9,6 +9,6 @@ export default createDrawerNavigator({
   HomeStack,
   ExamplesStack,
 }, {
-    initialRouteName: 'ExamplesStack',
+    // initialRouteName: 'ExamplesStack',
     contentComponent: CustomDrawerContentComponent,
   });

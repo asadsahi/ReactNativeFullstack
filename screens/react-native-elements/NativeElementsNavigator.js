@@ -10,20 +10,14 @@ import Pricing from './drawer/pricing';
 import Settings from './drawer/settings';
 
 
-const NativeElementsNavigator = createBottomTabNavigator(
-  {
-    Components,
-    Login,
-    Profile,
-    Lists,
-    Ratings,
-    Pricing,
-    Settings,
-  },
-  {
-    // initialRouteName: 'Components',
-    // contentComponent: CustomDrawerContentComponent,
-  }
-);
+const NativeElementsNavigator = createBottomTabNavigator({
+  Login,
+  Profile,
+  Lists,
+  Ratings,
+  Pricing,
+  Settings,
+  Components,
+});
 
 export default NativeElementsNavigator;

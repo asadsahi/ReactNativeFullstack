@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements';
 
 import Pricing from '../views/pricing';
 
-const PricingDrawerItem = createStackNavigator({
+const PriceStackItem = createStackNavigator({
   Pricing: {
     screen: Pricing,
     navigationOptions: ({ navigation }) => ({
@@ -22,7 +22,7 @@ const PricingDrawerItem = createStackNavigator({
   },
 });
 
-PricingDrawerItem.navigationOptions = {
+PriceStackItem.navigationOptions = {
   tabBarLabel: 'Pricing',
   tabBarIcon: ({ tintColor }) => (
     <Icon
@@ -38,4 +38,4 @@ PricingDrawerItem.navigationOptions = {
   ),
 };
 
-export default PricingDrawerItem;
+export default PriceStackItem;

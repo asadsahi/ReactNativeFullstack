@@ -7,7 +7,7 @@ import AppStack from './AppStack';
 const MainNavigator = createSwitchNavigator(
   {
     AuthLoading: AuthLoadingScreen,
-    Auth: AuthStack,
+    AppAuth: AuthStack,
     App: AppStack,
   },
   {

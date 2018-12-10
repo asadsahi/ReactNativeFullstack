@@ -34,13 +34,11 @@ export default class HomeScreen extends Component {
 
             <Text style={styles.getStartedText}>Get started by opening</Text>
 
-            <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-              <StyledText style={styles.codeHighlightText}>screens/HomeScreen.js</StyledText>
+
+            <View style={styles.helpContainer}>
+              <Button title="Logout" onPress={() => this.signOutAsync()}></Button>
             </View>
 
-            <Text style={styles.getStartedText}>
-              Change this text and your app will automatically reload.
-            </Text>
           </View>
 
           <View style={styles.helpContainer}>
@@ -53,10 +51,6 @@ export default class HomeScreen extends Component {
 
         <View style={styles.tabBarInfoContainer}>
           <Text style={styles.tabBarInfoText}>This is a tab bar. You can edit it in:</Text>
-
-          <View style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-            <StyledText style={styles.codeHighlightText}>navigation/MainTabNavigator.js</StyledText>
-          </View>
         </View>
       </View>
     );
@@ -94,6 +88,13 @@ export default class HomeScreen extends Component {
       'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
     );
   };
+
+  signOutAsync = async () => {
+    const { navigation } = this.props;
+    await AsyncStorage.clear();
+    navigation.navigate('AppAuth');
+  };
+
 }
 
 const styles = StyleSheet.create({
@@ -127,16 +128,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: 50,
   },
-  homeScreenFilename: {
-    marginVertical: 7,
-  },
+
   codeHighlightText: {
     color: 'rgba(96,100,109, 0.8)',
-  },
-  codeHighlightContainer: {
-    backgroundColor: 'rgba(0,0,0,0.05)',
-    borderRadius: 3,
-    paddingHorizontal: 4,
   },
   getStartedText: {
     fontSize: 17,
@@ -168,9 +162,6 @@ const styles = StyleSheet.create({
     fontSize: 17,
     color: 'rgba(96,100,109, 1)',
     textAlign: 'center',
-  },
-  navigationFilename: {
-    marginTop: 5,
   },
   helpContainer: {
     marginTop: 15,

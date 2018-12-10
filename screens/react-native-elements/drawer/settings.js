@@ -5,7 +5,7 @@ import { Icon } from 'react-native-elements';
 
 import Settings from '../views/settings';
 
-const SettingsDrawerItem = createStackNavigator({
+const SettingsStackitem = createStackNavigator({
   Settings: {
     screen: Settings,
     navigationOptions: ({ navigation }) => ({
@@ -27,7 +27,7 @@ const SettingsDrawerItem = createStackNavigator({
   },
 });
 
-SettingsDrawerItem.navigationOptions = {
+SettingsStackitem.navigationOptions = {
   tabbarLabel: 'Settings',
   tabBarIcon: ({ tintColor }) => (
     <Icon
@@ -43,4 +43,4 @@ SettingsDrawerItem.navigationOptions = {
   ),
 };
 
-export default SettingsDrawerItem;
+export default SettingsStackitem;

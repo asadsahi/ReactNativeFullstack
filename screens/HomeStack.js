@@ -9,8 +9,8 @@ import LinksScreen from './LinksScreen';
 import SettingsScreen from './SettingsScreen';
 
 const HomeStack = createStackNavigator({
-    Home: createBottomTabNavigator({
-        Home: {
+    AppHome: createBottomTabNavigator({
+        AppHome: {
             screen: HomeScreen,
             navigationOptions: {
                 tabBarLabel: 'Home',
@@ -37,7 +37,7 @@ const HomeStack = createStackNavigator({
         },
     })
 }, {
-        initialRouteName: "Home",
+        initialRouteName: "AppHome",
         defaultNavigationOptions: DefaultNavigationOptions,
     });
 export default HomeStack;

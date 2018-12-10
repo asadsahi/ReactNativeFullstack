@@ -1,7 +1,7 @@
 import React from "react";
+import { Svg } from 'expo';
 import { ScrollView } from "react-native";
 import { VictoryAxis } from "victory-native";
-import Svg from "react-native-svg";
 import viewStyles from "../styles/view-styles";
 
 export default class extends React.Component {
