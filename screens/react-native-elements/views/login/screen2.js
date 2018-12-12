@@ -28,7 +28,7 @@ const USER_HP = require('../../assets/images/user-hp.png')
 const SCREEN_WIDTH = Dimensions.get('window').width
 const SCREEN_HEIGHT = Dimensions.get('window').height
 
-export default class LoginScreen3 extends Component {
+export default class LoginScreen2 extends Component {
   constructor(props) {
     super(props)
 

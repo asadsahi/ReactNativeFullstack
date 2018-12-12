@@ -37,7 +37,7 @@ TabSelector.propTypes = {
   selected: PropTypes.bool.isRequired,
 };
 
-export default class LoginScreen2 extends Component {
+export default class LoginScreen3 extends Component {
 
   constructor(props) {
     super(props);

@@ -20,9 +20,9 @@ export default class Login extends Component {
           pagingEnabled
           decelerationRate={0.993}
         >
-          <LoginScreen3 />
           <LoginScreen1 />
           <LoginScreen2 />
+          <LoginScreen3 />
           <LoginScreen4 />
         </ScrollView>
       </View>

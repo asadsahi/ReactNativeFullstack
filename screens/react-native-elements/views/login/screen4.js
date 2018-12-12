@@ -6,7 +6,7 @@ const SCREEN_HEIGHT = Dimensions.get('window').height;
 
 const BG_IMAGE = require('../../assets/images/bg_screen4.jpg');
 
-export default class LoginScreen2 extends Component {
+export default class LoginScreen4 extends Component {
   render() {
     return (
       <View style={styles.container}>
