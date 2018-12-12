@@ -3,11 +3,11 @@ import { createDrawerNavigator } from 'react-navigation';
 
 import CustomDrawerContentComponent from '../components/CustomDrawerContentComponent';
 import HomeStack from '../screens/HomeStack';
-import ExamplesStack from '../screens/Examples/ExamplesStack';
+// import ExamplesStack from '../screens/Examples/ExamplesStack';
 
 export default createDrawerNavigator({
   HomeStack,
-  ExamplesStack,
+  // ExamplesStack,
 }, {
     // initialRouteName: 'ExamplesStack',
     contentComponent: CustomDrawerContentComponent,

@@ -34,18 +34,8 @@ export default class LoginScreen extends Component {
 
     _signInAsync = async () => {
         const { email, password } = this.state;
-        if (email === 'a@s.com') {
-            await AsyncStorage.setItem('userToken', 'abc');
-            this.props.navigation.navigate('App');
-        } else {
-            Alert.alert("Error", "Invalid credentials", [
-                { text: 'Ask me later', onPress: () => console.log('Ask me later pressed') },
-                { text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel' },
-                { text: 'OK', onPress: () => console.log('OK Pressed') },
-            ],
-                { cancelable: true }
-            );
-        }
+        await AsyncStorage.setItem('userToken', 'abc');
+        this.props.navigation.navigate('App');
     };
 
     validateEmail(email) {
