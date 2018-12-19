@@ -29,7 +29,14 @@
       "bundleIdentifier": "com.asadsahi.reactnativefullstack"
     },
     "android": {
-      "package": "com.asadsahi.reactnativefullstack"
-    }
+      "package": "com.asadsahi.reactnativefullstack",
+      "publishBundlePath": "android\\app\\src\\main\\assets\\shell-app.bundle",
+      "publishManifestPath": "android\\app\\src\\main\\assets\\shell-app-manifest.json"
+    },
+    "isDetached": true,
+    "detach": {
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.9.2-sdk31.0.0-d1776f37-d524-4fee-872d-6807b0fd83ff.tar.gz"
+    },
+    "scheme": "exp16818e1527014a4eba96e904cc9978fe"
   }
 }
